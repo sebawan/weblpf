@@ -1,0 +1,15 @@
+/* @imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/* LPF MAIN COLORS */
+:root {
+    /*Buttons*/
+    --lpf-btn-primary:#007bff;
+    --lpf-btn-success:#28a745;
+    --lpf-btn-danger:#dc3545;
+    --lpf-btn-warning:#ffc107;
+}
+
+.btn-primary {background:var(--lpf-btn-primary);}
+.btn-success {background:var(--lpf-btn-success);}
+.btn-danger {background:var(--lpf-btn-danger);}
+.btn-warning {background:var(--lpf-btn-warning);}
