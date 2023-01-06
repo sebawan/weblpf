@@ -36,3 +36,11 @@ input {
     border-radius: 5px;
     transition: border-color .3s ease;
 }
+
+.bg {
+    background: linear-gradient(90deg, rgba(1,58,77,1) 0%, rgba(0,134,170,1) 100%);
+    box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.75);
+    /* opacity: 0.95; */
+}
