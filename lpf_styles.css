@@ -16,6 +16,18 @@
     --lpf-bg:#013a4d;
     --lpf-bg-2:#0086aa;
     --lpf-bg-3:#003245;
+    --color_1:#f7ba2c;
+    --color_2:#ea5459;
+    --color_3:#ffcf67;
+    --color_4:#d3321d;
+}
+
+.lpf-gradient-1 {
+    background: linear-gradient(90deg, var(--color_1) 0%, var(--color_2) 100%);
+}
+
+.lpf-gradient-2 {
+    background: linear-gradient(90deg, var(--color_3) 0%, var(--color_4) 100%);
 }
 
 .btn-primary {background:var(--lpf-btn-primary);}
