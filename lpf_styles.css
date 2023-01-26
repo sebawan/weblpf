@@ -1,25 +1,31 @@
-/* @imports*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 /*Reset*/
-* {box-sizing: border-box;border:0;margin:0;padding:0;}
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
 /* LPF MAIN COLORS */
 :root {
+    /*Images*/
+    --lpf-cursor: url('https://sebawan.github.io/weblpf/img/cursor.png');
+    --lpf-cursor-2: url('https://sebawan.github.io/weblpf/img/cursor-2.png');
     /*Buttons*/
-    --lpf-btn-primary:#007bff;
-    --lpf-btn-success:#28a745;
-    --lpf-btn-danger:#dc3545;
-    --lpf-btn-warning:#ffc107;
-    /*Cursor*/
-    --lpf-cursor:url('./img/cursor.png'), auto;
-    --lpf-cursor-2:url('./img/cursor-2.png'), auto;
+    --lpf-btn-primary: #007bff;
+    --lpf-btn-success: #28a745;
+    --lpf-btn-danger: #dc3545;
+    --lpf-btn-warning: #ffc107;
     /*Colors*/
-    --lpf-bg:#013a4d;
-    --lpf-bg-2:#0086aa;
-    --lpf-bg-3:#003245;
-    --color_1:#f7ba2c;
-    --color_2:#ea5459;
-    --color_3:#ffcf67;
-    --color_4:#d3321d;
+    --lpf-bg: #013a4d;
+    --lpf-bg-2: #0086aa;
+    --lpf-bg-3: #003245;
+    --color_1: #f7ba2c;
+    --color_2: #ea5459;
+    --color_3: #ffcf67;
+    --color_4: #d3321d;
+
+    --color_bg_1: #c11d07;
 }
 
 .lpf-gradient-1 {
@@ -30,18 +36,37 @@
     background: linear-gradient(90deg, var(--color_3) 0%, var(--color_4) 100%);
 }
 
-.btn-primary {background:var(--lpf-btn-primary);}
-.btn-success {background:var(--lpf-btn-success);}
-.btn-danger {background:var(--lpf-btn-danger);}
-.btn-warning {background:var(--lpf-btn-warning);}
+.dark-bg {
+    background: var(--color_bg_1);
+}
 
-input {    
+.light-bg {
+    background: var(--color_bg_1);
+}
+
+.btn-primary {
+    background: var(--lpf-btn-primary);
+}
+
+.btn-success {
+    background: var(--lpf-btn-success);
+}
+
+.btn-danger {
+    background: var(--lpf-btn-danger);
+}
+
+.btn-warning {
+    background: var(--lpf-btn-warning);
+}
+
+input {
     margin: 10px 0;
     display: block;
     padding: 10px;
     font-size: 16px;
     border-width: 2px;
-    border-color: rgba(255,255,255,0.20);
+    border-color: rgba(255, 255, 255, 0.20);
     background-color: #003245;
     color: #ffffff;
     border-style: solid;
@@ -50,9 +75,9 @@ input {
 }
 
 .bg {
-    background: linear-gradient(90deg, rgba(1,58,77,1) 0%, rgba(0,134,170,1) 100%);
-    box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 9px -1px rgba(0,0,0,0.75);
+    background: linear-gradient(90deg, rgba(1, 58, 77, 1) 0%, rgba(0, 134, 170, 1) 100%);
+    box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
     /* opacity: 0.95; */
 }
