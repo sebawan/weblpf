@@ -6,42 +6,26 @@
     padding: 0;
 }
 
-/* LPF MAIN COLORS */
+/* LPF RESOURCES */
 :root {
     /*Images*/
-    --lpf-cursor: url('https://sebawan.github.io/weblpf/img/cursor.png');
-    --lpf-cursor-2: url('https://sebawan.github.io/weblpf/img/cursor-2.png');
+    --url_1: url('https://sebawan.github.io/weblpf/img/cursor.png'), auto;
+    --url_2: url('https://sebawan.github.io/weblpf/img/cursor-2.png'), auto;
     /*Buttons*/
     --lpf-btn-primary: #007bff;
     --lpf-btn-success: #28a745;
     --lpf-btn-danger: #dc3545;
     --lpf-btn-warning: #ffc107;
     /*Colors*/
-    --lpf-bg: #013a4d;
-    --lpf-bg-2: #0086aa;
-    --lpf-bg-3: #003245;
-    --color_1: #f7ba2c;
-    --color_2: #ea5459;
-    --color_3: #ffcf67;
-    --color_4: #d3321d;
+    --lpf-color-1: #FC4A1A;
+    --lpf-color-2: #F7B733;
 
-    --color_bg_1: #c11d07;
-}
+    --lpf-bg: #691e06;
+    --lpf-bg-2: #FF9100;
+    --lpf-bg-3: #691e06;
 
-.lpf-gradient-1 {
-    background: linear-gradient(90deg, var(--color_1) 0%, var(--color_2) 100%);
-}
-
-.lpf-gradient-2 {
-    background: linear-gradient(90deg, var(--color_3) 0%, var(--color_4) 100%);
-}
-
-.dark-bg {
-    background: var(--color_bg_1);
-}
-
-.light-bg {
-    background: var(--color_bg_1);
+    --color_bg_1: #691e06;
+    --color_text: #1c2833!important;
 }
 
 .btn-primary {
@@ -67,7 +51,7 @@ input {
     font-size: 16px;
     border-width: 2px;
     border-color: rgba(255, 255, 255, 0.20);
-    background-color: #003245;
+    background-color: var(--color_bg_1);
     color: #ffffff;
     border-style: solid;
     border-radius: 5px;
@@ -75,9 +59,12 @@ input {
 }
 
 .bg {
-    background: linear-gradient(90deg, rgba(1, 58, 77, 1) 0%, rgba(0, 134, 170, 1) 100%);
-    box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 1px 1px 9px -1px rgba(0, 0, 0, 0.75);
-    /* opacity: 0.95; */
+    background-image: url('./logo.png'), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: .3s all ease-in-out;
 }
+
+.bg:hover {
+    background-position: 33.5% center;
+  }
