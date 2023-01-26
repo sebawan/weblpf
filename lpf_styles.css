@@ -11,6 +11,7 @@
     /*Images*/
     --url_1: url('https://sebawan.github.io/weblpf/img/cursor.png'), auto;
     --url_2: url('https://sebawan.github.io/weblpf/img/cursor-2.png'), auto;
+    --logo: url('https://i.imgur.com/xqPNTMK.png');
     /*Buttons*/
     --lpf-btn-primary: #007bff;
     --lpf-btn-success: #28a745;
@@ -59,7 +60,7 @@ input {
 }
 
 .bg {
-    background-image: url('./logo.png'), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%);
+    background-image: var(--logo), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%);
     background-position: center center;
     background-repeat: no-repeat;
     transition: .3s all ease-in-out;
