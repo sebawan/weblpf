@@ -9,25 +9,60 @@
 /* LPF RESOURCES */
 :root {
     /*Images*/
-    --url_1: url('https://sebawan.github.io/weblpf/img/cursor.png'), auto;
-    --url_2: url('https://sebawan.github.io/weblpf/img/cursor-2.png'), auto;
-    --logo: url('https://i.imgur.com/xqPNTMK.png');
+    --url_1: url(
+    'https://sebawan.github.io/weblpf/img/cursor.png'), auto;
+    --url_2: url(
+    'https://sebawan.github.io/weblpf/img/cursor-2.png'), auto;
+    --logo: url(
+    'https://i.imgur.com/xqPNTMK.png');
     /*Buttons*/
     --lpf-btn-primary: #007bff;
-    --lpf-btn-success: #28a745;
-    --lpf-btn-danger: #dc3545;
+    --lpf-btn-success: #0074E5;
+    --lpf-btn-danger: #FF0055;
     --lpf-btn-warning: #ffc107;
     /*Colors*/
     --lpf-color-1: #FC4A1A;
-    --lpf-color-2: #F7B733;
+    --lpf-color-2: #FF0055;
 
-    --lpf-bg: #691e06;
-    --lpf-bg-2: #FF9100;
-    --lpf-bg-3: #691e06;
+    --lpf-bg: #0F1237;
+    --lpf-bg-2: #FF0055;
+    --lpf-bg-3: #161F4D;
 
-    --color_bg_1: #691e06;
+    --color_bg_1: #161F4D;
     --color_text: #1c2833!important;
+
+    /* Color Gradients */
+    --color_1:#FF0055;
+    --color_2:#8C0020;
+
+    --color_3:#040B20;
+    --color_4:#10153D;
+
+    --color_trb1:#000;
+    --color_trb2:#000;
 }
+
+/* Gradients */
+
+.trb_red {
+    background-image: var(--logo), linear-gradient(to right bottom, var(--color_1), #e10146, #c40138, #a7012c, var(--color_2));
+    border: 0.5px solid rgba(255, 255, 255, 20%);
+}
+
+.trb_black {
+    background-image: var(--logo), linear-gradient(to right bottom, var(--color_3), #070f27, #09112f, #0b1436, var(--color_4));
+    border: 0.5px solid rgba(255, 255, 255, 20%);
+}
+
+.to-top {
+    background-image: var(--logo), linear-gradient(to top, var(--color_3), #070f27, #09112f, #0b1436, var(--color_4));
+    border: 0.5px solid rgba(255, 255, 255, 20%);
+}
+
+/* .to-right-bottom {
+    background-image: var(--logo), linear-gradient(to right bottom, #040b20, #070f27, #09112f, #0b1436, #10153d);
+    border: 0.5px solid rgba(255, 255, 255, 20%);
+} */
 
 .btn-primary {
     background: var(--lpf-btn-primary);
@@ -35,10 +70,12 @@
 
 .btn-success {
     background: var(--lpf-btn-success);
+    border: 1px solid rgba(255, 255, 255, 80%);
 }
 
 .btn-danger {
     background: var(--lpf-btn-danger);
+    border: 1px solid rgba(255, 255, 255, 80%);
 }
 
 .btn-warning {
@@ -50,17 +87,15 @@ input {
     display: block;
     padding: 10px;
     font-size: 16px;
-    border-width: 2px;
-    border-color: rgba(255, 255, 255, 0.20);
+    border: 0.5px solid rgba(255, 255, 255, 20%)!important;
     background-color: var(--color_bg_1);
     color: #ffffff;
-    border-style: solid;
     border-radius: 5px;
     transition: border-color .3s ease;
 }
 
 .bg {
-    background-image: var(--logo), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%);
+    /* background-image: var(--logo), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%); */
     background-position: center center;
     background-repeat: no-repeat;
     transition: .3s all ease-in-out;
