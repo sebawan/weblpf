@@ -1,4 +1,5 @@
 @import url('https://rawcdn.githack.com/hung1001/font-awesome-pro-v6/44659d9/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
 
 /*Reset*/
 * {
@@ -11,12 +12,9 @@
 /* LPF RESOURCES */
 :root {
     /*Images*/
-    --url_1: url(
-    'https://sebawan.github.io/weblpf/img/cursor.png'), auto;
-    --url_2: url(
-    'https://sebawan.github.io/weblpf/img/cursor-2.png'), auto;
-    --logo: url(
-    'https://i.imgur.com/xqPNTMK.png');
+    --url_1: url('https://sebawan.github.io/weblpf/img/cursor.png'), auto;
+    --url_2: url('https://sebawan.github.io/weblpf/img/cursor-2.png'), auto;
+    --logo: url('https://i.imgur.com/xqPNTMK.png');
     /*Buttons*/
     --lpf-btn-primary: #007bff;
     --lpf-btn-success: #0074E5;
@@ -31,17 +29,17 @@
     --lpf-bg-3: #161F4D;
 
     --color_bg_1: #161F4D;
-    --color_text: #1c2833!important;
+    --color_text: #1c2833 !important;
 
     /* Color Gradients */
-    --color_1:#FF0055;
-    --color_2:#8C0020;
+    --color_1: #FF0055;
+    --color_2: #8C0020;
 
-    --color_3:#040B20;
-    --color_4:#10153D;
+    --color_3: #040B20;
+    --color_4: #10153D;
 
-    --color_trb1:#000;
-    --color_trb2:#000;
+    --color_trb1: #000;
+    --color_trb2: #000;
 }
 
 /* Gradients */
@@ -89,20 +87,93 @@ input {
     display: block;
     padding: 10px;
     font-size: 16px;
-    border: 0.5px solid rgba(255, 255, 255, 20%)!important;
+    border: 0.5px solid rgba(255, 255, 255, 20%) !important;
     background-color: var(--color_bg_1);
     color: #ffffff;
     border-radius: 5px;
     transition: border-color .3s ease;
 }
 
-.bg {
-    /* background-image: var(--logo), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%); */
+/* .bg {
+    background-image: var(--logo), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%);
     background-position: center center;
     background-repeat: no-repeat;
     transition: .3s all ease-in-out;
+} */
+
+/* .bg:hover {
+    background-position: 33.5% center;
+} */
+
+.no-border {
+    border: 0 !important;
 }
 
-.bg:hover {
-    background-position: 33.5% center;
-  }
+/* ANIMACIONES */
+.anim-salida-info {
+    animation: anim-salida-escala 0.3s ease-in-out forwards !important;
+}
+
+.slide-down {
+    animation: slide-down 0.3s ease-in-out forwards;
+}
+
+@keyframes anim-escala {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
+
+@keyframes anim-salida-escala {
+    0% {
+        transform: scale(1);
+        opacity: 100;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+@keyframes anim-escala-3d {
+    0% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+
+    100% {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+}
