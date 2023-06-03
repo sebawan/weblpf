@@ -94,16 +94,16 @@ input {
     transition: border-color .3s ease;
 }
 
-/* .bg {
+.bg {
     background-image: var(--logo), linear-gradient(90deg, var(--lpf-color-1) 0%, var(--lpf-color-2) 100%);
     background-position: center center;
     background-repeat: no-repeat;
     transition: .3s all ease-in-out;
-} */
+}
 
-/* .bg:hover {
+.bg:hover {
     background-position: 33.5% center;
-} */
+}
 
 .no-border {
     border: 0 !important;
